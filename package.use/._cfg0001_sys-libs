@@ -1,0 +1,16 @@
+sys-libs/ncurses -gpm
+# required by net-fs/samba-4.18.6::gentoo
+# required by samba (argument)
+>=sys-libs/ldb-2.8.0 ldap python
+# required by net-fs/samba-4.18.6::gentoo
+# required by samba (argument)
+=sys-libs/ldb-2.7.2 ldap
+# required by net-fs/samba-4.18.6::gentoo[-python_single_target_python3_10,ads,python_single_target_python3_11]
+# required by samba (argument)
+>=net-dns/bind-tools-9.16.42 gssapi
+# required by net-fs/samba-4.18.6::gentoo[python]
+# required by samba (argument)
+>=sys-libs/tdb-1.4.9 python
+# required by net-fs/samba-4.18.6::gentoo[python]
+# required by samba (argument)
+>=sys-libs/tevent-0.15.0 python

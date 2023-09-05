@@ -1,0 +1,35 @@
+sys-apps/util-linux
+net-print/cups -zeroconf
+net-dns/avahi -gtk
+x11-libs/gtk+ -cups
+media-libs/libsndfile minimal
+media-sound/mpg123 -pulseaudio
+media-video/pipewire extra ffmpeg gsettings flatpak liblc3 lv2 pipewire-alsa v4l echo-cancel gstreamer
+net-fs/samba -gpg  python ads -unwind winbind syslog spotlight snapper quota llvm-libunwind ldap json iprint glusterfs cpu_flags_x86_aes cluster ceph
+sys-libs/ldb ldap python
+# required by net-fs/samba-4.18.6::gentoo
+# required by samba (argument)
+sys-libs/ldb ldap
+# required by net-fs/samba-4.18.6::gentoo[-python_single_target_python3_10,ads,python_single_target_python3_11]
+# required by samba (argument)
+net-dns/bind-tools gssapi
+# required by net-fs/samba-4.18.6::gentoo[python]
+# required by samba (argument)
+sys-libs/tdb python
+# required by net-fs/samba-4.18.6::gentoo[python]
+# required by samba (argument)
+sys-libs/tevent python
+sys-cluster/ceph lua_single_target_lua5-4
+dev-libs/boost python
+# required by sys-cluster/ceph-18.2.0::gentoo
+# required by net-fs/samba-4.18.6::gentoo[ceph]
+# required by net-fs/cifs-utils-7.0::gentoo[acl]
+sys-fs/lvm2 lvm
+# required by dev-python/scipy-1.11.2::gentoo[-test]
+# required by sci-libs/scikit-learn-1.1.2::gentoo
+# required by sys-cluster/ceph-18.2.0::gentoo[mgr]
+# required by net-fs/samba-4.18.6::gentoo[ceph]
+# required by net-fs/cifs-utils-7.0::gentoo[acl]
+dev-python/numpy lapack
+net-vpn/protonvpn-cli python_targets_python3_11
+x11-base/xorg-server xvfb xnest xephyr xcsecurity suid unwind
